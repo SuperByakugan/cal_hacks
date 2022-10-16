@@ -11,7 +11,8 @@ app = FastAPI()
 hate_model = keras.models.load_model(r'./models/hate_model')
 micro_model = keras.models.load_model(r"./models/micro_race_model")
 
-@app.get('/get_channels')
+# hmm
+@app.post('/get_channels')
 def get_channels(
     payload: auth_key_payload
 ):
